@@ -1,0 +1,405 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+}
+
+/*Estilos Encabezados*/
+
+header{
+    background-color: #273440;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    color: #ececec;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+nav a:after{
+
+    content: "";
+    position: absolute;
+    background-color: #F2A74B;
+    height: 3px;
+    width: 0; left: 0; bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-links{
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover{color: #F2A74B;}
+
+a:hover:after{width: 100%;}
+
+.logo img{width: 200px;}
+
+
+/*Estilo Heroe*/
+
+
+.hero{
+
+    background-image: url(/Image/layered-waves-haikei.svg);
+    background-size: cover;
+    text-align: justify;
+    line-height: 29px;
+    padding: 180px 0;
+    color: #fff;
+}
+
+.hero-content{ padding: 0 0 80px 95px;}
+
+.hero-content h1{
+
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{font-size: 18px;}
+
+.cta-button{
+
+    background-color: #F2A74B;
+    color: #fff;
+    padding: 15px 80px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+strong{color: #F2A74B;}
+
+.boton{padding-top: 30px;}
+
+.cta-button:hover{
+
+    background-color: #df6d2e;
+    transition: 0.6s ease-in-out
+}
+
+
+/*Estilos Personal*/
+
+.Personal{
+
+    background-image: url(/Image/Particles-0.1s-1528px.svg);
+    background-size: cover;
+    text-align: left;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.section1 {
+
+    width: 1120px;
+    height: 700px;
+    justify-content: center;
+    display: grid;
+    margin: 0 auto;
+    grid:
+      "sidebar body" 1fr
+      / 1fr 1fr;
+    gap: 8px;
+  }
+  
+.sidebar { 
+
+    grid-area: sidebar;
+    background-color: #ffffff;
+    margin: 0 10px;
+    color: #150901;
+    padding-left: 30px;
+    text-align: justify;
+    
+}
+
+.sidebar p{ padding-bottom: 5px;}
+
+.body { 
+
+    grid-area: body; 
+    background-color: transparent; 
+    text-align: center;
+}
+
+.body img{
+
+    max-width: 390px;
+    padding-top: 50px;
+}
+
+.sidebar img{
+
+    max-width: 120px;
+    padding-right: 0;
+    border-radius: 3px;
+}
+
+.Personal .cta-button{
+
+    background-color: #f2a74b;
+    color: #fff;
+    padding: 15px 175px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.Personal .cta-button:hover{
+
+    background-color: #2f2e41;
+    transition: 0.6s ease-in-out;
+}
+
+
+/*Estilo Laborales*/
+
+.Laboral{
+
+    background-image: url(/Image/layered-waves-haikei\ \(1\).svg);
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.Laboral h2{
+
+    padding-top: 80px;
+    color: #fff;
+}
+
+.InformacionLab{
+
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.laboral{
+
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 40px;
+    border-radius: 5px;
+}
+
+.laboral:hover{
+
+    background-color: #F2A74B;
+    transition: 0.5s;
+
+}
+
+.laboral img{
+
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.laboral p{
+
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.Laboral a{
+
+    color: #df6d2e;
+}
+
+.laboral a:hover{
+
+    color: #fff;
+}
+
+
+.cliente-name{
+
+    font-weight: bold;
+    color: #df6d2e;
+    font-size: 14px;
+}
+
+
+/*Estilo Proyectos*/
+
+.Proyecto{
+
+    background-image: url(/Image/star-1s-1084px.svg);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.Proyecto .sidebar img{
+
+    max-width: 430px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Proyecto .sidebar img:hover{
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(239, 124, 17, 0.75);
+    transition: 0.4s;
+}
+
+.Proyecto .sidebar{
+
+    max-width: 505px;
+    padding-top: 30px;
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+.Proyecto .body{
+
+    background-color: #001220;
+    color: #fff;
+    text-align: center;
+    padding: 35px;
+}
+
+.Proyecto .cta-button{
+
+    background-color: #f2a74b;
+    color: #fff;
+    padding: 15px 150px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.Proyecto .cta-button:hover{
+
+    background-color: #df6d2e;
+    transition: 0.5s;
+}
+
+/*Estilos Contacto*/
+
+.Contacto{
+
+    background-color: #F2A74B;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.parte-slider{
+
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.parte1{
+
+    background-color: transparent;
+    width: 600px;
+    height: 350px;
+    text-align: left;
+    margin:  0 auto;
+
+}
+
+.parte2{
+
+    background-color: transparent;
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    margin:  0 auto;
+
+}
+
+form{
+
+    padding: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+textarea{
+
+    width: 72%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: none;
+}
+
+.texto input{
+
+   width: 74%;
+   border-radius: 5px;
+   padding: 7px 5px;
+   border: 1px solid #ccc;
+   margin-top: 10px;
+
+}
+
+.submit-button{
+
+    background-color: #2f2e41;
+    color: #fff;
+    padding: 15px 150px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.submit-button:hover{
+
+    background-color: #d44d27;
+}
+
+
+
+/*Estilo Footer*/
+
+footer{
+
+    background-color: #ba500d;
+    background-image: url(/Image/layered-waves-haikei\ \(1\).svg);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
